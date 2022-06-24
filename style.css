@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    background-image: url('piano.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Quicksand', monospace;
+    font-weight: bold;
+    color: rgb(235, 11, 197);
+    text-shadow: 2px 5px 5px rgb(255, 255, 255), 1px 1px 0px rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+.keys {
+    height: 400px;
+    width: 50%;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+/* Styling the button tags */
+button {
+    padding: 15px;
+    font-size: 1.3rem;
+    margin: 2px;
+    height: 150px;
+    cursor: pointer;
+}
+
+button:nth-of-type(even) {
+    background: black;
+    color: #fff;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 5px 6px green;
+}
+
+button.activated {
+    box-shadow: 0px 0px 5px 6px green;
+}
+
+/* Styling the .footer class and the anchor tag reciting the footer class */
+.footer {
+    font-family: 'Quicksand', Courier, monospace;
+    color: rgb(235, 11, 197);
+    text-shadow: 2px 5px 5px rgb(255, 255, 255), 1px 1px 0px rgb(255, 255, 255) ;
+}
+
+.footer a:active, .footer a:visited {
+    color: black;
+}
+
+.footer a:hover {
+    color: rgb(35, 245, 35);
+}
+
+/* Making the website responsive */
+@media(max-width: 920px) {
+    .keys {
+        width: 80%;
+    }
+}
+
+@media(max-width: 800px) {
+    .keys {
+        width: 90%;
+    }
+}
